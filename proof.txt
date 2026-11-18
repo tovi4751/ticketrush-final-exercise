@@ -1,0 +1,63 @@
+### git worktree list
+"C:/Users/\327\230\327\225\327\221\327\231/ticketrush"   85d6784 [main]
+"C:/Users/\327\230\327\225\327\221\327\231/early-access" af2aaf5 [feature/early-access]
+"C:/Users/\327\230\327\225\327\221\327\231/hotfix-price" 4ba3836 [hotfix/price]
+"C:/Users/\327\230\327\225\327\221\327\231/noa-refund"   4018330 [review/noa-refund]
+"C:/Users/\327\230\327\225\327\221\327\231/waitlist"     bb466e1 [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access                           af2aaf5 (C:/Users/טובי/early-access) feat: update max member tickets limit to 6 and ensure pricing logic
++ feature/waitlist                               bb466e1 (C:/Users/טובי/waitlist) feat: add waitlist implementation
++ hotfix/price                                   4ba3836 (C:/Users/טובי/hotfix-price) Revert "feat: add footer with links"
+* main                                           85d6784 [origin/main: ahead 10] Merge branch 'feature/early-access'
+  noa/refund                                     f7e8785 [origin/noa/refund] test: refund tests
++ review/noa-refund                              4018330 (C:/Users/טובי/noa-refund) docs: add code review findings for noa/refund
+  remotes/origin/HEAD                            -> origin/main
+  remotes/origin/dana/promo                      d4b1e35 test: add student discount tests
+  remotes/origin/main                            6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund                      f7e8785 test: refund tests
+  remotes/origin/ruth/fixes                      fee9f58 wip: try new fonts
+  remotes/origin/tovi-cohen/feature/early-access af2aaf5 feat: update max member tickets limit to 6 and ensure pricing logic
+  remotes/origin/tovi-cohen/feature/waitlist     bb466e1 feat: add waitlist implementation
+  remotes/origin/tovi-cohen/hotfix/price         4ba3836 Revert "feat: add footer with links"
+  remotes/origin/tovi-cohen/main                 85d6784 Merge branch 'feature/early-access'
+  remotes/origin/tovi-cohen/result               fb05ca4 result tovi-cohen 81/100
+  remotes/origin/tovi-cohen/review/noa-refund    4018330 docs: add code review findings for noa/refund
+
+### git log --graph --oneline --all -n 80
+* fb05ca4 (origin/tovi-cohen/result) result tovi-cohen 81/100
+*   85d6784 (HEAD -> main, tag: v1.1, origin/tovi-cohen/main) Merge branch 'feature/early-access'
+|\  
+| * af2aaf5 (origin/tovi-cohen/feature/early-access, feature/early-access) feat: update max member tickets limit to 6 and ensure pricing logic
+| *   2970741 fix: resolve merge conflict and implement final member/student discount logic
+| |\  
+| | * d4b1e35 (origin/dana/promo) test: add student discount tests
+| | * 0841085 feat: student discount (15%)
+| * | 99e8e4b feat: implement early access pricing and member limits
+| |/  
+* | 2f35437 security: remove config.js from git tracking and add config.example.js
+* | 8305650 fix: correct concert date in events.js
+* | bb466e1 (origin/tovi-cohen/feature/waitlist, feature/waitlist) feat: add waitlist implementation
+* | 4ba3836 (origin/tovi-cohen/hotfix/price, hotfix/price) Revert "feat: add footer with links"
+|/  
+| * 4018330 (origin/tovi-cohen/review/noa-refund, review/noa-refund) docs: add code review findings for noa/refund
+| * f7e8785 (origin/noa/refund, noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
